@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de plazo fijo</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+</head>
+
+<body>
+	
+	<div class="slide cover">
+		<h1>Calculadora de intereses de plazo fijo</h1>
+		<button type="submit" id="start">Empezar</button>
+		<p><small>Conocé cuánto podés obtener invirtiendo en un plazo fijo en distintos bancos del país</small></p>
+	</div>
+
+	<div class="slide data">
+		<label class="text">Capital a invertir
+			<input class="box" type="number" id="capital" min="500" placeholder="500.00">
+		</label>
+
+		<label class="text">Plazo en días
+			<input class="box" type="number" id="term" min="30" max="900" placeholder="30">
+		</label>
+
+		<label class="text">Moneda
+			<select class="box" id="currency">
+				<option value="pesos">Pesos</option>
+				<option value="dollars">Dólares</option>
+			</select>
+		</label>
+
+		<label class="text">Banco
+			<select class="box" id="bank">
+				<option value="santander">Santander Rio</option>
+				<option value="galicia">Galicia</option>
+			</select>
+		</label>
+
+		<label class="text">Tipo de plazo fijo
+			<select class="box" id="cancellation">
+				<option value="non_cancelable">Tradicional</option>
+				<option value="precancelable">Precancelable</option>
+			</select>
+		</label>
+
+		<button type="submit" id="calc" disabled="disabled">Calcular</button>
+	</div>
+
+	<div class="slide result">
+		<div class="container-result">
+			Capital inicial<br>
+			<span id="inicial-capital"></span><br>
+			Intereses ganados<br>
+			<span id="interest-result"></span><br>
+			Capital total<br>
+			<span id="total-result"></span><br>
+		</div>
+		<button type="submit" id="recalc">Realizar otra consulta</button>
+	</div>
+
+
+
+
+</body>
+
+</html>
+

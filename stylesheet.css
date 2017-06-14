@@ -1,0 +1,74 @@
+.slide {
+	position: relative;
+	margin: 30px auto;
+	width: 300px;
+	height: 300px;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	border: 1px solid #aaa;
+	font-family: 'Roboto', sans-serif;
+	box-shadow: 4px 4px 40px -10px #eee;
+}
+
+.slide.data {
+	display: none;
+}
+
+.slide.result {
+	display: none;
+}
+
+.slide button {
+	background-color: #D80026;
+	padding: 10px 20px;
+	color: #fff;
+	border: 0;
+	font-size: 14px;
+}
+
+.slide p {
+	line-height: 0.8em;
+}
+
+.slide label {
+	display: block;
+	margin: 10px 0;
+}
+
+.slide input, .slide select {
+	width: 100px;
+    font-size: 1.2em;
+    border: 0;
+    border-bottom: 1px solid;
+    padding: 4px 4px;
+    margin: 0 4px;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.slide select {
+    font-size: 1em;
+}
+
+.slide input {
+	text-align: right;
+}
+
+.slide button#calc {
+	margin-top: 10px;
+}
+
+.slide button#calc[disabled="disabled"] {
+	opacity: 0.8;
+	color: #aaa;
+}
+
+.slide.result {
+	text-align: center;;
+}
+
+.slide.result span {
+	display: inline-block;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
